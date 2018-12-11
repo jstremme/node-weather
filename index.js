@@ -1,9 +1,11 @@
 let request = require('request');
 const argv = require('yargs').argv;
+var fs = require('fs');
 
-let apiKey = 'ca644db53b8f9b76d1da242b49abd733'; // hide in future iteration
+var keys = JSON.parse(fs.readFileSync('keys.json', 'utf8'));
+let apiKey = keys["apiKey"];
 let city = argv.c || 'Minneapolis';
-let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`
+let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
 
 request(url, function (err, response, body) {
   if(err){
