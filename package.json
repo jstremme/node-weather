@@ -1,0 +1,28 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "node weather app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jstremme/node-weather.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "javascript",
+    "weather"
+  ],
+  "author": "Joel Stremmel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jstremme/node-weather/issues"
+  },
+  "homepage": "https://github.com/jstremme/node-weather#readme",
+  "dependencies": {
+    "yargs": "^12.0.5"
+  }
+}
